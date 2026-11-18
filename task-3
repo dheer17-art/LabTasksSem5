@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoon Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<aside>
+
+<h1>Cartoon<br>Archive</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Characters</a>
+<a href="#">Classic</a>
+<a href="#">Anime</a>
+<a href="#">Indian Cartoons</a>
+</nav>
+
+<div class="side-note">
+<p>
+"Every cartoon has a story, a memory and a character we never forget."
+</p>
+</div>
+
+</aside>
+
+
+
+<main>
+
+
+<section class="top">
+
+<h2>Explore Cartoon Universe</h2>
+
+<p>
+A collection of famous cartoon characters,
+their worlds and interesting facts.
+</p>
+
+</section>
+
+
+
+<section class="cards">
+
+
+<div class="card">
+
+<div class="number">
+01
+</div>
+
+<h3>Shinchan</h3>
+
+<p>
+Genre: Comedy
+</p>
+
+<p>
+A five year old kid famous for his funny expressions,
+innocent questions and crazy adventures.
+</p>
+
+<span>
+Japan Animation
+</span>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="number">
+02
+</div>
+
+<h3>Doraemon</h3>
+
+<p>
+Genre: Fantasy
+</p>
+
+<p>
+A robotic cat from the future who helps Nobita using
+special gadgets.
+</p>
+
+<span>
+Future World
+</span>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="number">
+03
+</div>
+
+<h3>Ben 10</h3>
+
+<p>
+Genre: Action
+</p>
+
+<p>
+A young hero who uses Omnitrix to transform into
+different aliens.
+</p>
+
+<span>
+Super Hero
+</span>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="number">
+04
+</div>
+
+<h3>Chhota Bheem</h3>
+
+<p>
+Genre: Adventure
+</p>
+
+<p>
+An Indian animated hero known for his strength,
+bravery and friendship.
+</p>
+
+<span>
+Indian Cartoon
+</span>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="number">
+05
+</div>
+
+<h3>Ninja Hattori</h3>
+
+<p>
+Genre: Ninja Comedy
+</p>
+
+<p>
+A ninja character who protects his friends with
+unique ninja skills.
+</p>
+
+<span>
+Ninja Story
+</span>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="number">
+06
+</div>
+
+<h3>Mr Bean</h3>
+
+<p>
+Genre: Comedy
+</p>
+
+<p>
+A character famous for silent comedy and unusual
+problem solving.
+</p>
+
+<span>
+Comedy Icon
+</span>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="number">
+07
+</div>
+
+<h3>Horrid Henry</h3>
+
+<p>
+Genre: Comedy
+</p>
+
+<p>
+A mischievous boy known for his creative plans
+and adventures.
+</p>
+
+<span>
+Funny World
+</span>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="number">
+08
+</div>
+
+<h3>Badri Budbak</h3>
+
+<p>
+Genre: Indian Comedy
+</p>
+
+<p>
+A fun cartoon character based around friendship
+and daily adventures.
+</p>
+
+<span>
+Indian Fun
+</span>
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="blog">
+
+
+<div>
+<h3>Animation Evolution</h3>
+<p>
+From hand drawn cartoons to modern animation,
+cartoon technology has changed massively.
+</p>
+</div>
+
+
+<div>
+<h3>Why Cartoons Matter?</h3>
+<p>
+Cartoons teach creativity, imagination and
+storytelling.
+</p>
+</div>
+
+
+<div>
+<h3>Childhood Memories</h3>
+<p>
+Many characters become unforgettable parts
+of our childhood.
+</p>
+</div>
+
+
+</section>
+
+
+</main>
+
+
+</div>
+
+
+</body>
+</html>
