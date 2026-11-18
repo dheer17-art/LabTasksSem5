@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async Programming</title>
+</head>
+<body>
+
+    <h2>Server Data Fetching</h2>
+    <button onclick="fetchData()">Fetch Data</button>
+
+    <h3 id="result">Waiting for data...</h3>
+
+    <script>
+        function fetchData() {
+
+            document.getElementById("result").innerText =
+                "Fetching data...";
+
+            let promise = new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+
+                    let data = {
+                        id: 101,
+                        name: "Abhay",
+                        course: "B.Tech CSE"
+                    };
+
+                    resolve(data);
+
+                }, 3000);
+
+            });
+
+            promise.then((data) => {
+
+                document.getElementById("result").innerText =
+                    "Data Received: " + JSON.stringify(data);
+
+                console.log(data);
+
+            }).catch((error) => {
+
+                console.log(error);
+
+            });
+        }
+    </script>
+
+</body>
+</html>
