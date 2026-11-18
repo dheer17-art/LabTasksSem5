@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            width: 600px;
+            margin: 30px auto;
+        }
+
+        .mainImage {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .thumbnails img {
+            width: 25%;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .thumbnails img:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+
+        <img
+            class="mainImage"
+            src="https://picsum.photos/id/1015/800/500"
+            alt="Main Image"
+        >
+
+        <div class="thumbnails">
+
+            <img src="https://picsum.photos/id/1015/800/500" alt="Image 1">
+
+            <img src="https://picsum.photos/id/1016/800/500" alt="Image 2">
+
+            <img src="https://picsum.photos/id/1018/800/500" alt="Image 3">
+
+            <img src="https://picsum.photos/id/1020/800/500" alt="Image 4">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let mainImage = document.querySelector(".mainImage");
+
+        let images = document.querySelectorAll(".thumbnails img");
+
+        images.forEach(function(img){
+
+            img.addEventListener("click", function(){
+
+                mainImage.src = img.src;
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
