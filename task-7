@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .taskbox{
+            display: flex;
+            gap: 10px;
+            background-color: red;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ToDoList</h1>
+
+    <button>Add Task</button>
+
+    <div class="inputs">
+        <input class="taskInput" type="text" placeholder="enter Task">
+        <button class="btn">Add Task</button>
+
+    </div>
+    <div class="tasks">
+
+
+
+    </div>
+    <script>
+       
+       let box = document.querySelector(".tasks");
+       let task = document.querySelector(".taskInput");
+       let btn = document.querySelector(".btn");
+
+       btn.addEventListener("click" , function(){
+
+            let taskVal = task.value.trim();
+            if(taskVal==""){
+                alert("Please enter the value");
+                return;
+            }
+
+            let taskbox = document.createElement("div");
+            taskbox.innerHTML = ` <h2 > ${taskVal} </h2>  
+                <button  class="deleteBtn" > Delete </button>
+             `
+            
+            taskbox.className = "taskbox";
+            box.appendChild(taskbox);
+
+            let delbutton = taskbox.querySelector(".deleteBtn");
+
+            delbutton.addEventListener("click" , function(){
+                taskbox.remove();
+            })
+
+
+       })
+
+        
+      
+    </script>
+</body>
+</html>
