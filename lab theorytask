@@ -1,0 +1,22 @@
+   <script>
+        for (let num = 100; num <= 999; num++) {
+            let digits = String(num);
+            let power = digits.length;
+            let sum = 0;
+            
+            for (let digit of digits) {
+                sum += Number(digit) ** power;
+            }
+
+            if (sum === num) {
+                console.log(num);
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
