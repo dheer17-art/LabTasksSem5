@@ -1,0 +1,87 @@
+@@ -0,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin: 30px;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        #about {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .heading {
+            color: #0066cc;
+        }
+
+        p {
+            color: rgb(60, 60, 60);
+            line-height: 1.5;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        ol {
+            color: #444;
+        }
+
+        ul {
+            color: rgb(0, 100, 0);
+        }
+
+        li {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>About Us</h1>
+
+    <div id="about">
+        <h2 class="heading">Who We Are</h2>
+
+        <p>
+            We are a small group of students interested in technology,
+            movies and travelling. We enjoy learning new things and
+            working on simple projects.
+        </p>
+
+        <h2 class="heading">Our Favorite Movies</h2>
+
+        <ol>
+            <li>3 Idiots</li>
+            <li>Interstellar</li>
+            <li>Avengers</li>
+        </ol>
+
+        <h2 class="heading">Cities We Like</h2>
+
+        <ul>
+            <li>Delhi</li>
+            <li>Mumbai</li>
+            <li>Jaipur</li>
+        </ul>
+
+        <p>
+            Visit our <a href="#">website</a> to know more about us.
+        </p>
+    </div>
+
+</body>
+</html>
