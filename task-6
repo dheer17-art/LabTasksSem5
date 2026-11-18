@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+        
+        const students = (() => {
+            return [
+                { name: "abhay", marks: [80, 75, 90] },
+                { name: "Rahul", marks: [30, 35, 40] },
+                { name: "Priya", marks: [85, 90, 95] },
+                { name: "Aman", marks: [45, 50, 55] }
+            ];
+        })();
+
+        function calculateTotal(marks) {
+            return marks.reduce((sum, mark) => sum + mark, 0);
+        }
+
+        const results = students.map(student => {
+            const total = calculateTotal(student.marks);
+            const average = total / student.marks.length;
+
+            return {
+                name: student.name,
+                total: total,
+                average: average,
+                status: average >= 40 ? "Pass" : "Fail"
+            };
+        });
+
+        const passedStudents = results.filter(
+            student => student.status === "Pass"
+        );
+
+        const allMarksTotal = students.reduce(
+            (grandTotal, student) =>
+                grandTotal + calculateTotal(student.marks),
+            0
+        );
+
+        function createCounter() {
+            let count = 0;
+
+            return function () {
+                count++;
+                return count;
+            };
+        }
+
+        const counter = createCounter();
+
+        results.forEach(student => {
+            console.log(
+                `${student.name}: Total = ${student.total}, ` +
+                `Average = ${student.average}, Status = ${student.status}, ` +
+                `Processed = ${counter()}`
+            );
+        });
+
+        console.log("Passed students:", passedStudents.map(s => s.name));
+        console.log("Total marks of all students:", allMarksTotal);
+
+
+
+    </script>
+    
+</body>
+</html>
